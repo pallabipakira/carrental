@@ -1,0 +1,204 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Login section */
+.login-sec {
+  background: url("../assets/Login.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 122px 0 20px;
+  position: relative;
+}
+.login-sec > div > div {
+  align-items: end;
+}
+
+.verticalimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: 475px;
+}
+.login-left {
+  position: relative;
+}
+.signpoint {
+  position: absolute;
+  max-width: 550px;
+  width: 100%;
+  bottom: 220px;
+}
+.login-car {
+  max-width: 856px;
+}
+.login-car > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.login-form-top {
+  text-align: center;
+}
+.login-form-top > h1 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 14px;
+}
+.login-form-top > h2 {
+  font-size: 33px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 19px;
+}
+.login-form-top > p {
+  font-family: "Roboto", sans-serif;
+  color: #919191;
+  margin-bottom: 27px;
+}
+.google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #000000;
+  max-width: 445px;
+  margin: 0 auto;
+  color: white;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.google:hover {
+  background: rgb(29, 28, 28);
+}
+.divider {
+  margin: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+  font-family: "Inter", sans-serif;
+  color: #919191;
+  font-size: 15px;
+}
+.divider > div {
+  width: 120px;
+  height: 1px;
+  background: #919191;
+}
+.divider > p {
+  font-size: 14px;
+  text-wrap: nowrap;
+}
+.login-inputs {
+  margin-bottom: 30px;
+}
+.login-inputs > div {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.login-inputs input[type="email"],
+.login-inputs input[type="password"] {
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  margin-bottom: 21px;
+}
+.inputs-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputs-end > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+.inputs-end > div:first-child a {
+  color: #a6a6a6;
+}
+.inputs-end > div:last-child > a {
+  font-size: 14px;
+  color: #ffae00;
+}
+.login-form-bottom {
+  text-align: center;
+}
+.login-form-bottom > a:first-child {
+  padding: 10px 54px;
+  background-color: #ffae00;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.login-form-bottom > a:last-child {
+  color: #919191;
+  font-size: 15px;
+}
+.login-form-bottom > a:last-child > span {
+  color: #ffae00;
+}
+.inputs-end > div:first-child > label {
+  margin: 0;
+}
+@media screen and (max-width: 576px) {
+  .login-sec .col-6 {
+    width: 100%;
+  }
+  .verticalimg {
+    display: none;
+  }
+  .signpoint {
+    display: none;
+  }
+  .login-sec {
+    background: white;
+  }
+  .login-car {
+    margin: 0 auto 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .login-form-top > p {
+    font-size: 14px;
+    margin-bottom: 17px;
+  }
+  .divider {
+    margin: 30px 0;
+  }
+  .login-inputs label:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .login-inputs input[type="email"],
+  .login-inputs input[type="password"] {
+    padding: 16px 0 16px 20px;
+    margin-bottom: 12px;
+  }
+  .login-inputs {
+    margin-bottom: 25px;
+  }
+  .login-form-bottom > a:first-child {
+    margin-bottom: 20px;
+  }
+}

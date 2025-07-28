@@ -1,0 +1,339 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+    <!-- font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--  CSS -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/contact_style.css" />
+    <!-- <link rel="stylesheet" href="./css/about_us_style.css" /> -->
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header-section">
+      <div class="container">
+        <nav class="nav-bar">
+          <div class="nav-wrpr">
+            <div class="nav-logo">
+              <a href="index.html">
+                <img src="./assets/CarPoint-White Logo 1.png" alt="" />
+              </a>
+            </div>
+            <button class="toggler">
+              <div class="hamberger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </button>
+            <div class="nav-right">
+              <ul>
+                <li>
+                  <a href="about_us.html" class="links common-hover">About</a>
+                </li>
+                <li>
+                  <a href="booking.html" class="links common-hover">Booking</a>
+                </li>
+                <li>
+                  <a href="how_its_work.html" class="links common-hover"
+                    >How Its Work
+                  </a>
+                </li>
+                <li>
+                  <a href="contact.html" class="links common-hover">Contact</a>
+                </li>
+              </ul>
+              <div class="nav-btn">
+                <a href="login.html" class="links">Login</a>
+                <a href="signup.html" class="btn-effect links">Signup</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobileview">
+      <button class="classbtn">&times;</button>
+      <div class="phone-wrpr">
+        <ul>
+          <li><a href="index.html" class="common-hover links">Home</a></li>
+          <li><a href="about_us.html" class="common-hover links">About</a></li>
+          <li><a href="booking.html" class="common-hover links">Booking</a></li>
+          <li>
+            <a href="how_its_work.html" class="common-hover links"
+              >How its Work</a
+            >
+          </li>
+          <li><a href="contact.html" class="common-hover links">contact</a></li>
+        </ul>
+        <div class="phone-btn">
+          <a href="login.html" class="links">Login</a>
+          <a href="" class="links">
+            <span>Logout</span>
+            <span><i class="fa-solid fa-right-from-bracket"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner section -->
+
+    <section class="about-banner-sec" id="contact-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-50 banner-left">
+            <div class="about-banner-content">
+              <h1 class="outlined" id="contact-outlined">
+                <span> Contact</span>
+                <span>us</span>
+              </h1>
+            </div>
+          </div>
+          <div class="col-50 banner-right">
+            <div class="about-banner-img">
+              <img src="./assets/worldmap.png" alt="" />
+            </div>
+          </div>
+          <img
+            src="./assets/multiple-car 1.png"
+            alt=""
+            class="about-multicar-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Get in touch section -->
+    <section class="getintouch-sec">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-50">
+            <div class="getintouch-left">
+              <h2 class="heads">Get in touch</h2>
+              <p class="common-para">
+                Lorem ipsum dolor sit amet consectetur. Volutpat eu elit
+                interdum in. Adipiscing urna diam pellentesque.
+              </p>
+              <div>
+                <div class="email">
+                  <div class="email-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                  </div>
+                  <div class="email-info">
+                    <p>Email address</p>
+                    <div>info@carpoint.com</div>
+                  </div>
+                </div>
+                <div class="phone">
+                  <div class="phone-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="ph-info">
+                    <p>Phone number</p>
+                    <div>+91 12345 6789</div>
+                  </div>
+                </div>
+                <div class="address">
+                  <div class="address-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="address-info">
+                    <p>Address</p>
+                    <div>
+                      7th Floor, Unit No- 7E, Bengal Eco Intelligent Park, Plot
+                      No. 3, EM Block, Sector V, Bidhannagar, Kolkata, West
+                      Bengal 700091
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <div class="getintouch-right">
+              <div>
+                <label for="fName">Full Name </label> <br />
+                <input
+                  type="text"
+                  name="fName"
+                  id="fName"
+                  placeholder="Enter Full Name "
+                />
+              </div>
+              <div>
+                <label for="bId">Booking ID</label> <br />
+                <input
+                  type="text"
+                  name="bId"
+                  id="bId"
+                  placeholder="Enter Booking ID"
+                />
+              </div>
+              <div>
+                <label for="email">Email Address </label> <br />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter Email Address"
+                />
+              </div>
+              <div>
+                <label for="des">Description</label> <br />
+                <textarea
+                  name="des"
+                  id="des"
+                  placeholder="Type Here..."
+                ></textarea>
+              </div>
+              <div class="getintouch-btn">
+                <a href="#" class="btn-effect">Submit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-sec">
+      <div class="small-container">
+        <div class="form-wrpr">
+          <h2 class="form-head">Questions? Get in Touch</h2>
+          <div class="row">
+            <div class="col-50">
+              <div class="form">
+                <div>
+                  <input type="text" name="" id="" placeholder="Your Name*" />
+                </div>
+                <div>
+                  <input type="text" name="" id="" placeholder="Your Email*" />
+                </div>
+                <div>
+                  <textarea name="" id="" placeholder="Your Message"></textarea>
+                </div>
+                <a href="" class="btn-effect">Send A Message</a>
+              </div>
+            </div>
+            <div class="col-50">
+              <div class="form-content">
+                <p>
+                  Download <br />
+                  <img src="./assets/Car point 1.png" alt="" />
+                  App for free
+                </p>
+                <p>For easier, booking & easy deals</p>
+                <a href="">
+                  <img src="./assets/black 1.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="formcar">
+            <img src="./assets/all-car 1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-25">
+            <div class="comp-logo">
+              <div class="logo">
+                <img src="./assets/CarPoint-White Logo 2.png" alt="" />
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Tempora laborum sapiente expedita iure, sed consequuntur.
+              </p>
+
+              <ul>
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="company">
+              <div class="footer-title-small">Company</div>
+              <ul>
+                <li><a href="index.html" class="links">Home</a></li>
+                <li><a href="about_us.html" class="links">About us</a></li>
+                <li><a href="booking.html" class="links">Booking</a></li>
+                <li>
+                  <a href="how_its_work.html" class="links">How Its Work</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="help">
+              <div class="footer-title-small">Help</div>
+              <ul>
+                <li><a href="#">Customer Support </a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Careers </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="letter">
+              <div class="footer-title-small">Subscribe To Newsletters</div>
+              <div>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter Your Emain"
+                />
+                <a href="#" class="btn-effect">Subscribe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-btm">
+          <img src="./assets/Vector.png" alt="" />2024 CarPoint All rights
+          reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS js CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom js -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

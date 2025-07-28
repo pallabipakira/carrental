@@ -1,0 +1,177 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.signup-sec .col-6 {
+  padding: 0 15px !important;
+}
+/* Sign up section */
+.signup-sec {
+  background: url("../assets/Login.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 50px;
+  position: relative;
+  min-height: 100vh;
+}
+.signup-sec > div > div {
+  align-items: center;
+}
+.signupvertical {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: 475px;
+}
+.sign-left {
+  position: relative;
+}
+.signpoint {
+  position: absolute;
+  max-width: 550px;
+  width: 100%;
+  bottom: 220px;
+}
+.signcar {
+  max-width: 856px;
+}
+.signcar > img {
+  width: 100%;
+  object-fit: contain;
+}
+.sign-head {
+  text-align: center;
+  margin-bottom: 57px;
+}
+.sign-head > h1 {
+  font-size: 33px;
+  font-weight: bold;
+  margin-bottom: 19px;
+}
+.sign-head > p {
+  color: #919191;
+}
+.sign-form-inputs > div:not(:last-child) {
+  max-width: 500px;
+  margin: 0 auto 21px;
+}
+.sign-form-inputs > div:not(:nth-child(8)) input {
+  width: 100%;
+  padding: 10px 0 20px 15px;
+}
+.sign-form-inputs > div:first-child {
+  display: flex;
+  gap: 20px;
+}
+.sign-form-inputs > div:first-child > div {
+  flex: 1;
+}
+.file > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b0b0b0;
+  background: #f2f2f2;
+  border-radius: 5px;
+  padding: 13px 6px 11px 20px;
+  font-size: 14px;
+}
+.file > div > label {
+  margin: 0;
+  padding: 12px 28px;
+  color: white;
+  background-color: #575757;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file > div > p {
+  font-size: 14px;
+}
+label:last-child {
+  margin: 0;
+  text-wrap: wrap;
+}
+.sign-form-inputs > div:nth-child(8) {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #b1b1b1;
+}
+.sign-form-inputs > div:last-child {
+  text-align: center;
+}
+.sign-form-inputs > div:last-child > a:first-child {
+  background-color: #ffae00;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 45px;
+  margin-bottom: 17px;
+}
+.sign-form-inputs > div:last-child > a:last-child {
+  color: #919191;
+}
+.sign-form-inputs > div:last-child > a:last-child > span {
+  color: #ffae00;
+}
+
+@media screen and (max-width: 1173px) {
+  .signpoint {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .signpoint {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .signup-sec {
+    background: white;
+  }
+  .signup-sec .col-6 {
+    width: 100%;
+  }
+
+  .signupvertical,
+  .signpoint {
+    display: none;
+  }
+  .sign-left {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sign-form-inputs > div:first-child {
+    flex-direction: column;
+  }
+  label:last-child {
+    font-size: 12px;
+  }
+  .sign-head {
+    margin-bottom: 37px;
+  }
+  .sign-head > p {
+    font-size: 14px;
+  }
+  .sign-form-inputs > div:last-child > a:first-child {
+    padding: 11px 35px;
+  }
+  .signup-sec {
+    padding-bottom: 10px;
+  }
+}
